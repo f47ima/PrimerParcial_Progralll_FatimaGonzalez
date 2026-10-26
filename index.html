@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Supercars Olivos: una selección curada de autos nobles, deportivos y superdeportivos." />
+
+    <!-- Titulo -->
+    <title>Supercars Olivos</title>
+    <!-- Icono -->
+    <link rel="icon" href="assets/icono.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- SCRIPT -->
+    <script src="index.js" defer></script>
+    <!-- Importación de fuentes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Importación de fuentes Personal : La agregue porque me parecia mas apropiada al diseño-->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor_header">
+            <a href="#inicio" class="header__marca">
+                <img src="assets/icono.png" alt="Logo Supercars Olivos" class="header__logo">
+                <span>SUPERCARS</span>
+            </a>
+
+            <nav class="header__nav">
+                <a href="#nobles">Nobles</a>
+                <a href="#premiums">Premiums</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero__contenedor">
+                <video class="hero_video" autoplay muted loop playsinline>
+            <source src="assets/video.mp4" type="video/mp4">
+        </video>
+            </div>
+        </section>
+
+        <div class="titulo_principal__contenedor">
+            <h1 class="titulo_principal">Supercars Olivos</h1>
+        </div>
+
+        <section class="catalogo_nobles" id="nobles">
+            <div class="contenedor_catalogos">
+                <h2 class="titulo_cat">Nobles</h2>
+                <div class="contenedor-nobles">
+                </div>
+            </div>
+        </section>
+        <section class="catalogo_premiums" id="premiums">
+            <div class="contenedor_catalogos">
+                <h2 class="titulo_cat">Premiums</h2>
+                <div class="contenedor-premiums">
+                </div>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <div class="contenedor_catalogos">
+                <h2 class="titulo_cat">Contacto</h2>
+
+                <form class="contacto__form" id="form-contacto">
+                    <label for="contacto-nombre">Nombre</label>
+                    <input type="text" id="contacto-nombre" name="nombre" required>
+
+                    <label for="contacto-email">Email</label>
+                    <input type="email" id="contacto-email" name="email" required>
+
+                    <label for="contacto-telefono">Teléfono</label>
+                    <input type="tel" id="contacto-telefono" name="telefono" required>
+
+                    <div class="contacto__intereses">
+                        <div class="titulo-intereses"><img src="assets/manito-naranja.png" alt="Me interesa"
+                                class="contacto__icono">
+                            <label for="contacto-intereses">Autos de interés</label>
+                        </div>
+                        <textarea id="contacto-intereses" name="intereses" rows="2"
+                            placeholder="Marcá con la manito los autos que te interesen" readonly
+                            tabindex="-1"></textarea>
+                    </div>
+
+                    <label for="contacto-consulta">Consulta</label>
+                    <textarea id="contacto-consulta" name="consulta" rows="5"
+                        placeholder="Contanos qué querés saber"></textarea>
+
+                    <button type="submit">Enviar consulta</button>
+                </form>
+
+                <p id="contacto-confirmacion"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <p>&copy; 2026 Supercars Olivos. Todos los derechos reservados.</p>
+            <div class="footer__links">
+                <a href="#inicio">Inicio</a>
+                <a href="#nobles">Nobles</a>
+                <a href="#premiums">Premiums</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
